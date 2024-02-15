@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    color: white;
+    font-size: 1rem;
+}
+.bg{
+    background-image: url(images/body.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    margin-top: -10px;
+}
+header nav{
+    display: flex;
+    top: 0;
+    margin: 10px 40px;
+    padding: 10px;
+}
+header nav h3{
+    margin: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: whitesmoke;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+}
+header nav ul{
+    margin-inline-start: 440px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+header nav ul li{
+    list-style-type: none;
+    float: left;
+    margin-left: 50px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+header nav ul li a:hover{
+    color: rgb(29, 162, 240);
+}
+.title{ 
+    margin-left: 570px;
+    margin-top: 40px;
+    padding: 50px;
+    
+}
+.title h2{
+   text-transform: uppercase;
+   color: rgb(29, 162, 240);
+   margin: 5px;
+}
+.title p{
+    line-height: 23px;
+}
+.title button{
+    margin: 10px;
+    padding: 10px 15px;
+    color: whitesmoke;
+    background-color: rgb(29, 162, 240);
+    border-radius: 5px;
+    border: 1px solid rgb(29, 162, 240);
+    cursor: pointer;
+}
+.title button:hover{
+    box-shadow: 0px 2px 10px 5px rgb(6, 71, 109);
+}
+#why-choose{
+    background-color: black;
+} 
+#why-choose h2{
+    padding: 60px;
+    color: rgb(29, 162, 240);
+}
+.f-choose{
+    display: flex;
+    width: 100%;
+}
+.choose{
+    display: flex;
+    padding: 50px;
+}
+.choose .feature{
+    border: 1px solid rgb(116, 112, 112);
+    margin-right: 10px;
+    padding: 12px;
+    background-color: rgb(116, 112, 112);
+    background: linear-gradient();
+    border-radius: 5px;
+    width: 100%;
+}
+.choose .feature:hover{
+    border: 1px solid rgb(29, 162, 240);
+    box-shadow: 0px 2px 25px 2px rgb(82, 81, 81);
+}
+.feature p{
+    margin-top: 5px;
+    color: whitesmoke;
+}
+#our-programs{
+    background-color: black;
+    padding: 60px;
+}
+#our-programs h2{
+    color: rgb(29, 162, 240);
+    padding: 20px 0px;
+}
+.m-program{
+    display: flex;
+    padding: 40px 0px;
+}
+.program{
+    width: 100%;
+}
+.program .logo{
+    width: 100px;
+    padding: 5px;
+}
+.program h3,p{
+    padding: 10px;
+}
+#join-now{
+    background-color: black;
+    padding: 40px;
+}
+#join-now h2{
+    padding: 20px;
+    color: rgb(29, 162, 240);
+}
+#join-now p{
+    padding: 20px;
+    line-height: 20px;
+}
+#join-now button{
+    margin: 20px;
+    padding: 10px 15px;
+    color: whitesmoke;
+    background-color: rgb(29, 162, 240);
+    border-radius: 5px;
+    border: 1px solid rgb(29, 162, 240);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#join-now button:hover{
+    box-shadow: 0px 2px 10px 5px rgb(6, 71, 109);
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px 60px;
+}
+
+/* animations */
+
+.animate{
+    animation-name: loadeffect;
+    animation-duration: 0.7s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+.animate-bounce{
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+@keyframes loadeffect{
+    0%{
+        transform: translateY(-900px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes bounce {
+    50%,80%,100%{
+        transform: translateY(0px);
+    }
+    0%{
+        transform: translateY(-1000px);
+    }
+    40%{
+        transform: translateY(-15px);
+    }
+    60%{
+        transform: translateY(-30px);
+    }
+    90%{
+        transform: translateY(-15px);
+    }
+}
+
+/* Responsive */
+
+@media (max-width:1200px) {
+    header nav ul{
+        margin-inline-start: 370px;
+    }
+    .title{ 
+        margin-left: 530px;
+    }
+}
+@media (max-width:1110px) {
+    header nav ul{
+        margin-inline-start: 340px;
+    }
+    header nav ul li{
+        margin-left: 35px;
+    }
+    .title{ 
+        margin-left: 500px;
+    }
+}
+@media (max-width:1050px) {
+    header nav ul{
+        margin-inline-start: 300px;
+    }
+    header nav ul li{
+        margin-left: 35px;
+    }
+    .title{ 
+        margin-left: 470px;
+    }
+}
+@media (max-width:1000px) {
+    header nav ul{
+        margin-inline-start: 275px;
+    }
+    header nav ul li{
+        margin-left: 33px;
+    }
+    .title{ 
+        margin-left: 450px;
+    }
+    .feature p{
+        margin: -5px;
+    }
+}
+@media (max-width:980px) {
+    header nav ul{
+        margin-inline-start: 200px;
+    }
+    header nav ul li{
+        margin-left: 30px;
+    }
+    .title{ 
+        margin-left: 410px;
+    }
+}
+@media (max-width:950px) {
+    header nav ul{
+        margin-inline-start: 180px;
+    }
+    header nav ul li{
+        margin-left: 29px;
+    }
+    .title{ 
+        margin-left: 380px;
+    }
+}
+@media (max-width:865px) {
+    header nav ul{
+        margin-inline-start: 120px;
+    }
+    header nav ul li{
+        margin-left: 28px;
+    }
+    .title{ 
+        margin-left: 15px;
+        margin-top: 100px;
+    }
+    #why-choose h2{
+        color: rgb(29, 162, 240);
+    }
+    .choose{
+        margin-top: -30px;
+        display: flex;
+        margin-right: 42px;
+    }
+    .f-choose{
+        display: block;
+        margin: 9px;
+    }
+    .feature{
+        margin: 20px;
+        width: 100%;
+        height: 50%;
+    }
+}
+@media (max-width:800px){
+    header nav{
+        margin: 10px 10px;
+    }
+    header nav ul{
+        margin-inline-start: 90px;
+    }
+    .title{ 
+        padding: 20px;
+        margin-top: 90px;
+    }
+    #why-choose{
+        padding: -10px;
+    }
+    #why-choose h2{
+        padding: 30px;
+    }
+    .choose{
+        padding: 10px;
+    }
+    #our-programs{
+        padding: 30px;
+    }
+    #our-programs h2{
+        padding: 20px;
+    }
+    .m-program{
+        padding: 10px;
+    }
+    #join-now{
+        padding: -10px;
+    }
+}
+@media (max-width:710px){
+    header nav{
+        margin: 10px 0px;
+    }
+    header nav ul{
+        margin-inline-start: 40px;
+    }
+    .title{ 
+        padding: 10px;
+    }
+    #why-choose{
+        padding: -40px;
+    }
+    #our-programs{
+        padding: 20px;
+    }
+    #join-now{
+        padding: 20px;
+    }
+}
+@media (max-width:640px){
+    header .navigation{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(63, 61, 61);
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navigation li{
+        padding: 15px;
+        margin: 10px;
+        
+    }
+    header .navigation.active{
+        display: flex;
+    }
+    .toogle{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 11;
+        background-image: url(images/menu.png);
+        background-size: 30px;
+        margin-top: 10px;
+        margin-left: 500px;
+        position: fixed;
+    }
+    .toogle.active{
+        background: url(images/close.png);
+        background-position: center;
+        background-size: 30px;
+    }
+}
+@media (max-width:580px){
+    .toogle{
+        margin-inline-start: 460px;
+    }
+    .choose{
+        margin-top: -30px;
+        display: block;
+        margin-right: 42px;
+        width: 80%;
+    }
+    .m-program{
+        display: block;
+    }
+}
+@media (max-width:530px){
+    .toogle{
+        margin-inline-start: 400px;
+    }
+}
+@media (max-width:490px){
+    .toogle{
+        margin-inline-start: 330px;
+    }
+
+}

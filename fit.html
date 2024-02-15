@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZymFit - Your Fitness Destination</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <header>
+        <nav>
+          <h3>ZymFit</h3>
+          <div class="toogle" onclick="toogleMenu();"></div>
+          <ul class="navigation">
+            <li><a href="#why-choose">Why Choose</a></li>
+            <li><a href="#our-programs">Our Programs</a></li>
+            <li><a href="#join-now">Join Now</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="title">
+        <h2 class="animate">
+          Welcome to ZYMFIT - Your Gateway to Ultimate Physical Wellness!
+        </h2>
+        <br />
+        <p class="animate">
+          Embark on a transformative journey to a healthier, fitter you at
+          ZYMFIT, your one-stop destination for all things fitness. Whether
+          you're a seasoned gym enthusiast or just starting your fitness
+          adventure, we provide the tools, resources, and expert guidance to
+          help you reach your goals. Join us and let's achieve fitness
+          milestones together!
+        </p>
+        <button class="animate-bounce">JOIN NOW</button>
+      </section>
+    </div>
+
+    <section id="why-choose">
+      <h2>WHY CHOOSE ZYMFIT?</h2>
+      <div class="choose">
+        <div class="f-choose">
+        <div class="feature">
+          <h3>Tailored Workouts</h3>
+          <p>
+            Our fitness programs cater to all levels, ensuring workouts that
+            suit your lifestyle and preferences.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Expert Guidance</h3>
+          <p>
+            Certified fitness trainers provide personalized advice, crafting the
+            perfect workout routine and offering nutrition tips.
+          </p>
+        </div>
+      </div>
+        <div class="f-choose">
+        <div class="feature">
+          <h3>State-of-the-Art Facilities</h3>
+          <p>
+            Experience the best in fitness technology with our top-notch gym
+            equipment in a motivating environment.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Nutritional Support</h3>
+          <p>
+            Achieving your fitness goals is not just about exercise - it's also
+            about fueling your body with the right nutrients. Our nutrition
+            experts can help you create a customized meal plan to complement
+            your workouts.
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="our-programs">
+      <h2>OUR PROGRAMS</h2>
+      <div class="m-program">
+        <div class="program">
+          <img src="images/weight-loss.png" alt="Weight" class="logo">
+          <h3>Weight Management</h3>
+          <p>
+            Whether you want to shed a few pounds or build muscle, our programs
+            are tailored to your needs.
+          </p>
+        </div>
+        <div class="program">
+          <img src="images/cardiovascular.png" alt="cardio" class="logo">
+          <h3>Cardiovascular Health</h3>
+          <p>
+            Boost your heart health with our cardio-focused workouts to improve
+            endurance and stamina.
+          </p>
+        </div>
+      </div>
+      <div class="m-program">
+        <div class="program">
+          <img src="images/dumbbell.png" alt="strength" class="logo">
+          <h3>Strength Training</h3>
+          <p>
+            Build lean muscle and increase strength with our expertly crafted
+            strength training programs.
+          </p>
+        </div>
+        <div class="program">
+          <img src="images/balance.png" alt="balance" class="logo">
+          <h3>Flexibility and Balance</h3>
+          <p>
+            Enhance flexibility and find balance with our yoga and mobility
+            classes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="join-now">
+      <h2>JOIN ZYMFIT TODAY!</h2>
+      <p>
+        Ready to take the first step towards a healthier, more active lifestyle?
+        Sign up for a ZymFit membership today and gain access to a world of
+        fitness opportunities.
+      </p>
+      <button>Sign Up Now</button>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 MohanGolakoti. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toogleMenu(){
+        const toogle= document.querySelector('.toogle');
+        const navigation=document.querySelector('.navigation');
+        toogle.classList.toggle('active');
+        navigation.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
