@@ -384,7 +384,7 @@ footer{
         background-image: url(images/menu.png);
         background-size: 30px;
         margin-top: 10px;
-        margin-left: 500px;
+        margin-left: 540px;
         position: fixed;
     }
     .toogle.active{
@@ -395,7 +395,7 @@ footer{
 }
 @media (max-width:580px){
     .toogle{
-        margin-inline-start: 460px;
+        margin-inline-start: 470px;
     }
     .choose{
         margin-top: -30px;
@@ -409,12 +409,28 @@ footer{
 }
 @media (max-width:530px){
     .toogle{
-        margin-inline-start: 400px;
+        margin-inline-start: 430px;
     }
 }
 @media (max-width:490px){
     .toogle{
-        margin-inline-start: 330px;
+        margin-inline-start: 380px;
     }
-
+}
+@media (max-width:420px) {
+    .toogle{
+        margin-inline-start: 320px;
+    }
+    .title{
+        margin-top: 40px;
+        padding: 0px;
+    }
+}
+@media (max-width:360px) {
+    .toogle{
+        margin-inline-start: 270px;
+    }
+    .title{
+        margin-top: 20px;
+    }
 }
